@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="/static/styles.css" rel="stylesheet" type="text/css" >
+    <link href="/static/loginform.css" rel="stylesheet" type="text/css" >
+    <link href="/static/register.css" rel="stylesheet" type="text/css" >
+
+
+        {% if title == "Dashboard" %}
+              <title>Geek World - {{title}}  </title>
+
+        {% elif title == "Login" %}
+              <title>Geek World - {{title}}  </title>
+
+        {% elif title=="Tushar" %}
+              <title>Geek World - {{title}}  </title>
+        {% else %}
+              <title>Geek World - {{title}}  </title>
+        {% endif %}
+
+</head>
+<body>
+
+
+    <div class="navigation-bar ">
+        <h2 class="geek-world">Gee<span class="k-w">k-W</span>orld</h2>
+        <ul class="navigation-bar-list">
+            <li><a href="{{url_for('dashboard')}}"> Home</a></li>
+            <li><a href="{{url_for('login')}}"> login</a></li>
+            <li><a href="{{url_for('register')}}"> signup</a></li>
+            <li><a href="{{url_for('about')}}"> about</a></li>
+
+        </ul>
+
+    </div>
+    <hr>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <div class="flash">
+            <ul class=flashes>
+            {% for message in messages %}
+              <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+    {% endwith %}
+
+    {% block flash %}{% endblock flash %}}
+    {% block body %} {% endblock body %}
+
+</body>
+</html>

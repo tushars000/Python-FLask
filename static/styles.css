@@ -1,0 +1,60 @@
+body{
+    height: 100%;
+    background: url("Nature-Night-Sky-Stars-Blurred-Light-Show-Mountains-WallpapersByte-com-1366x768.jpg") no-repeat fixed ;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.navigation-bar{
+    color: whitesmoke;
+    width:100%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.k-w{
+    color:firebrick;
+}
+
+.navigation-bar-list{
+    display: flex;
+    list-style:none;
+}
+
+.navigation-bar-list li{
+    padding:20px;
+}
+
+.navigation-bar-list a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navigation-bar-list li:hover{
+background-color: #560000;
+}
+
+hr{
+    width: 80%;
+    box-sizing: border-box;
+    border:2px #560000 solid;
+}
+
+.flashes{
+    background-color: rgba(0,0,0,0.5);
+    color: whitesmoke;
+    position: absolute;
+    list-style: none;
+    font-size: 30px;
+    font-weight: bold;
+    left:50%;
+    bottom: 5%;
+    transform: translate(-50%,5%);
+
+}

@@ -1,0 +1,72 @@
+
+.register-box{
+    width:400px;
+    height:600px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+.register-gender{
+    padding: 15px;
+}
+
+.register-gender label{
+    font-size: 20px;
+    padding-right:10px;
+
+}
+.inputs{
+    font-size: 15px;
+    background: none;
+    outline: none;
+    color: whitesmoke;
+    border: 2px solid #33FFBD ;
+    padding: 8px;
+    width:65%;
+    margin-bottom: 10px;
+    border-radius: 24px;
+    text-align: center;
+    transition: .25s;
+}
+
+
+
+.errors{
+    color:red;
+    font-size: 18px;
+    float: left;
+    text-align: left;
+
+}
+
+.errors li{
+    list-style: none;
+     padding: 0;
+    margin: 0;
+}
+.form-register .radio{
+    display: inline;
+    list-style:none;
+}
+
+.register-box .form-register  input[type="text"]:focus,.register-box .form-register  input[type="password"]:focus{
+    width: 80%;
+    border: 2px solid #e74c3c;
+
+}
+
+.register-box .form-register input[type="submit"]{
+    cursor: pointer;
+    font-size: 20px;
+
+}
+.register-box .form-register input[type="submit"]:hover{
+
+    width:80%;
+    border: 2px solid #e74c3c;
+}
